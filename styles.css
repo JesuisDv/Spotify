@@ -13,7 +13,7 @@ body{
 
 /* Barra Lateral */
 aside{
-    background-color: #1E1E2F;
+    background-color: #121212;
     width: 25%;
     height: 100vh;
     display: flex;
@@ -28,7 +28,6 @@ nav{
     height: 30% ;
     padding: 10px;
     margin: 30px;
-    border: 0.5px solid #9a9a9f;
 }
 
 nav ul{
@@ -71,7 +70,6 @@ ul il{
     height: 70%;
     padding: 10px;
     margin: 30px;
-    border: 0.5px solid #9a9a9f;
 }
 
 /* portada */
@@ -104,4 +102,48 @@ ul il{
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+}
+
+/* main */
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 17, 21);
+}
+
+/* Botonos PLayer */
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+}
+
+.play{
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.icons img{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+    
+}
+
+.icons:active{
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out;
 }
