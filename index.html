@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon/icons8-spotify-16.png" type="image/png" sizes="16x16">
+    <title>Spotify</title>
+</head>
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <il class="selector">
+                    <span ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                      </svg>
+                    </span>
+                    <span>Home</span>
+                </il>
+
+                <il class="selector">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                        <path d="M21 21l-6 -6"></path>
+                      </svg></span>
+                    <span>Buscar</span>
+                </il>
+
+                <il class="selector">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M5 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M9 4m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z"></path>
+                            <path d="M5 8h4"></path>
+                            <path d="M9 16h4"></path>
+                            <path d="M13.803 4.56l2.184 -.53c.562 -.135 1.133 .19 1.282 .732l3.695 13.418a1.02 1.02 0 0 1 -.634 1.219l-.133 .041l-2.184 .53c-.562 .135 -1.133 -.19 -1.282 -.732l-3.695 -13.418a1.02 1.02 0 0 1 .634 -1.219l.133 -.041z"></path>
+                            <path d="M14 9l4 -1"></path>
+                            <path d="M16 16l3.923 -.98"></path>
+                          </svg>
+                    </span>
+                    <span>
+                        Tu Biblioteca
+                    </span>
+                </il>
+            </ul>
+        </nav>
+        <div class="reproductor">
+            <div class="cover">
+                <img  id="picture" src="./covers/song.png" alt="Portada de la canción actual">
+                <h1 id="title"></h1>
+                <audio  id="song" src="" ></audio>
+            </div>
+
+            <div class="playerButtons">
+                <button class="icons"></button>
+                <button class="icons" onclick="togglePLay"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clip-rule="evenodd" />
+                  </svg>
+                  </button>
+                <button class="icons"></button>
+            </div>
+        </div>
+    </aside>
+    <main>
+
+    </main>
+
+</body>
+<script src="./scripts.js"></script>
+</html>
