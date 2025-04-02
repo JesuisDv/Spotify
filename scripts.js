@@ -18,7 +18,10 @@ function change(){
     music.src = songs[position];
     image.src = pictures[position];
     Name.textContent = titles[position];  
+    music.load();
     music.play();
+
+    document.querySelector(".play").innerHTML = pausedButton;
 };
 
 change();
@@ -44,7 +47,6 @@ function nextSong(){
         position = 0;
     }
     change();
-    music.play();
     
 };
 function previousSong(){
@@ -53,7 +55,6 @@ function previousSong(){
         position = songs.length -1;
     }
     change();
-    music.play();
 
 };
 
